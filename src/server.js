@@ -22,11 +22,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 */
 
 app.get('/', (req, res) => {
-  res.json('pongs dev!');
+  res.json('pongs image updater dev!');
 });
 
 app.get('/health', (req, res) => {
-  res.json('This server is healthy - test tags-dev');
+  res.json('This server is healthy - image updater');
 });
 
 app.get('/todos', (req, res) => {
