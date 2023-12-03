@@ -3,7 +3,7 @@ name: CI/CD
 on:
     push:
         branches:
-            - develop
+            - main
 
 jobs:
     build-and-push:
@@ -21,7 +21,7 @@ jobs:
 
             - name: Build and push Docker image
               run: |
-                  IMAGE_NAME="sprintugdevs/hms-backend"
+                  IMAGE_NAME="emmamichael/todos-test"
                   COMMIT_ID=$(git rev-parse --short HEAD)
                   docker buildx create --use
                   docker buildx build \
