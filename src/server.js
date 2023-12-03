@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 */
 
 app.get('/', (req, res) => {
-  res.json('pong!');
+  res.json('pongs dev!');
 });
 
 app.get('/health', (req, res) => {
