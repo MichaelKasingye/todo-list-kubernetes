@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/health', (req, res) => {
-  res.json('This server is healthy - test -v0.123');
+  res.json('This server is healthy - test tags');
 });
 
 app.get('/todos', (req, res) => {
