@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 */
 
 app.get('/', (req, res) => {
-  res.json('pongs image updater dev!');
+  res.json('pongs image updater dev test!');
 });
 
 app.get('/health', (req, res) => {
